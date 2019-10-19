@@ -24,11 +24,13 @@ public class TestConstructor {
 			
 			// (一)cls.newInstance
 			D d = (D) cls.newInstance();
+			System.out.println("d.getColor():"+d.getColor());
 			
 			// (二)constuctor.newInstance
 			Constructor<D> constr = cls.getConstructor(String.class);
 			D tom = constr.newInstance("tom");
-			
+			System.out.println("tom.getName():"+tom.getName());
+
 		} catch (InstantiationException e) {
 			//   Auto-generated catch block
 			e.printStackTrace();

@@ -60,6 +60,7 @@ public class ThreadInterrupt {
             while(!isStop){
                 i++;
             }
+            System.out.println("i"+i);
         }
 
         public void setStop(boolean stop){

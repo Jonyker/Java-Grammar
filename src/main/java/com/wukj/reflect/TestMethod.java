@@ -18,7 +18,7 @@ public class TestMethod {
 		 * - 方法可能会抛出的异常
 		 */
 		try {
-			Class cls = Class.forName("com.wukj.reflect.D");
+			Class<?> cls = Class.forName("com.wukj.reflect.D");
 			System.out.println("------------------------method");
 			Method[] methods = cls.getDeclaredMethods();
 			for (Method method : methods) {
@@ -29,6 +29,7 @@ public class TestMethod {
 				if(logTarget != null){
 					// 获取注解中的参数
 					int code = logTarget.requestCode();
+					System.out.println("code:"+code);
 				}
 
 				System.out.println("------------------------------------------------getName：" + method.getName());
@@ -39,8 +40,8 @@ public class TestMethod {
 				}
 				
 				System.out.println("------------------------method-parameter-type");
-				Class[] pTypes = method.getParameterTypes();
-				for (Class clz : pTypes) {
+				Class<?>[] pTypes = method.getParameterTypes();
+				for (Class<?> clz : pTypes) {
 					System.out.println("getName：" + clz.getName());
 				}
 				
@@ -63,8 +64,8 @@ public class TestMethod {
 				
 				
 				System.out.println("------------------------method-exception");
-				Class[] exceCls = method.getExceptionTypes();
-				for (Class clz : exceCls) {
+				Class<?>[] exceCls = method.getExceptionTypes();
+				for (Class<?> clz : exceCls) {
 					System.out.println("getName："+ clz.getName());
 					System.out.println("getTypeName："+ clz.getTypeName());
 					System.out.println("getSimpleName："+ clz.getSimpleName());

@@ -11,7 +11,7 @@ public class TestEnum {
 
 	public static void main(String[] args) {
 		try {
-			Class cls = StateEnum.class;
+			Class<StateEnum> cls = StateEnum.class;
 			System.out.println("------------------------enum");
 			System.out.println("" + Arrays.asList(cls.getEnumConstants()));
 
@@ -30,11 +30,11 @@ public class TestEnum {
 				}
 			}
 
-			Class clz = D.class;
+			Class<D> clz = D.class;
 			Field f = clz.getDeclaredField("mColor");
 			f.setAccessible(true);
-			Constructor<D> constr = clz.getConstructor(null);
-			D d = constr.newInstance(null);
+			Constructor<D> constr = clz.getConstructor(clz);
+			D d = constr.newInstance(clz);
 			Color color1 = (Color) f.get(d);
 			System.out.println("Color State:"+color1);
 			f.set(d, Color.BLUE);

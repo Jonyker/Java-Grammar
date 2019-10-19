@@ -8,7 +8,7 @@ public class TestMethosInvoke {
 	public static void main(String[] args) {
 		
 		
-		Class cls;
+		Class<?> cls;
 		try {
 			cls = Class.forName("com.wukj.reflect.D");
 		

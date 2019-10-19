@@ -7,9 +7,6 @@ public class OO {
 
         B b1 = new B(a);
         B b2 = new B(a);
-        B b3 = new B(a);
-        B b4 = new B(a);
-        B b5 = new B(a);
         b1.reduce();
         b2.reduce();
 

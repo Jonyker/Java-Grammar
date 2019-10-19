@@ -11,12 +11,13 @@ public class TestPrint {
 		// 获取Class的三种对象方式
 		D d = new D();
 		Class<?> clazz1 = d.getClass();
-		Class<?> clazz2 = D.class;
-
+		System.out.println(clazz1.getName());
+		Class<D> clazz2 = D.class;
+		System.out.println(clazz2.getName());
 		try {
 			Class<?> clazz3 = Class.forName("com.wukj.reflect.D");
+			System.out.println(clazz3.getName());
 		} catch (ClassNotFoundException e) {
-			//   Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -51,8 +52,8 @@ public class TestPrint {
 
 		System.out.println("------------------------constructor");
 		// 获取类的构造
-		Constructor[] constructors = clazz1.getConstructors();
-		for (Constructor constructor : constructors) {
+		Constructor<?>[] constructors = clazz1.getConstructors();
+		for (Constructor<?> constructor : constructors) {
 			System.out.println("getName：" + constructor.getName());
 		}
 		

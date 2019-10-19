@@ -1,15 +1,14 @@
 package com.wukj.reflect;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class D extends Animal {
 
 	public int km;
 
-	private String des;
+	// private String des;
 
-	private Color mColor;
+	// private Color mColor;
 
 	public List<String> mBu;
 	
@@ -32,10 +31,10 @@ public class D extends Animal {
 		RED, WHITE, BLACK, BLUE, YELLOR
 	}
 
-	private List<Double> walk() {
-		System.out.println("-----开始走路");
-		return new ArrayList<>();
-	}
+	// private List<Double> walk() {
+	// 	System.out.println("-----开始走路");
+	// 	return new ArrayList<>();
+	// }
 
 	public void play(List<Integer> tools) throws Exception {
 		System.out.println("-----开始玩耍");
@@ -56,9 +55,9 @@ public class D extends Animal {
 		System.out.println("-----清理");
 	}
 
-	private int sub(int a, int b) {
-		System.out.println("-----两数相减");
-		return a - b;
-	}
+	// private int sub(int a, int b) {
+	// 	System.out.println("-----两数相减");
+	// 	return a - b;
+	// }
 
 }

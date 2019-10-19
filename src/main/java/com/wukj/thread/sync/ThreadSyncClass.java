@@ -30,7 +30,7 @@ public class ThreadSyncClass {
         }.start(); 
         new Thread(){
             @Override
-            public void run() {
+            public  void run() {
                 insertData.insert1();
             }
         }.start();
@@ -50,7 +50,7 @@ class InsertData3 {
         System.out.println("执行insert完毕");
     }
 
-    public synchronized static void insert1() {
+    public synchronized void insert1() {
         System.out.println("执行insert1");
         System.out.println("执行insert1完毕");
     }
