@@ -1,4 +1,3 @@
-
 package com.wukj.pattern.adapter.extend;
 
 import org.junit.Test;
