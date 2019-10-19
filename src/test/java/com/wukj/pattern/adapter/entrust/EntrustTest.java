@@ -1,4 +1,3 @@
-
 package com.wukj.pattern.adapter.entrust;
 
 import org.junit.Test;

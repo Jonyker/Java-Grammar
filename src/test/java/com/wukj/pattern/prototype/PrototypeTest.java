@@ -1,4 +1,3 @@
-
 package com.wukj.pattern.prototype;
 
 import org.junit.Test;
