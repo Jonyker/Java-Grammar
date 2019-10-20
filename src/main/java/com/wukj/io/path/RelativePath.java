@@ -26,6 +26,7 @@ public class RelativePath {
         while ((len = br.readLine()) != null) {
             System.out.println(len);
         }
+        br.close();
     }
 
     /**
@@ -39,6 +40,7 @@ public class RelativePath {
         while ((len = br.readLine()) != null) {
             System.out.println(len);
         }
+        br.close();
     }
 
 
@@ -54,5 +56,6 @@ public class RelativePath {
         if ((len=br.readLine())!=null){
             System.out.println(len);
         }
+        br.close();
     }
 }
