@@ -1,6 +1,6 @@
 package com.wukj.tools.character;
 
-public class Calcute {
+public class Calculate {
 
     public void calcutes() {
 

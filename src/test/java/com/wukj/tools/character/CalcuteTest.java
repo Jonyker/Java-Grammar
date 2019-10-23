@@ -7,7 +7,7 @@ public class CalcuteTest {
     @Test
     public void testCalcutes() {
         
-        new Calcute().calcutes();
+        new Calculate().calcutes();
 
     }
 
