@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EncodeDemo",
+            "request": "launch",
+            "mainClass": "com.wukj.io.encode.EncodeDemo",
+            "projectName": "grammar-model"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FilePath",
             "request": "launch",
             "mainClass": "com.wukj.io.file.FilePath",
