@@ -2,6 +2,8 @@ package com.wukj.io.bytes;
 
 import java.io.IOException;
 
+import com.wukj.tools.bytes.ByteToHexUtils;
+
 import org.junit.Test;
 
 public class ByteOptionTest {
@@ -16,4 +18,10 @@ public class ByteOptionTest {
     public void testReadBufferWriteToByteFile() throws IOException {
         new ByteOption().readBufferByteFile();
     }
+
+    @Test
+    public void testByteOptions() throws IOException {
+        new ByteToHexUtils().testByte();
+    }
+
 }
