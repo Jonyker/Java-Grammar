@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ByteToHexUtils",
+            "request": "launch",
+            "mainClass": "com.wukj.tools.bytes.ByteToHexUtils",
+            "projectName": "grammar-java"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - EncodeDemo",
             "request": "launch",
             "mainClass": "com.wukj.io.encode.EncodeDemo",
