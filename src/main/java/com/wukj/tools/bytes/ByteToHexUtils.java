@@ -140,6 +140,8 @@ public class ByteToHexUtils {
             System.out.println("卡包数据-------秒------byte----13: " + Integer.toHexString(rDate[13] & 0xFF));
             System.out.println("----------------------------------");
 
+            System.out.println("卡包数据-------状态------byte-----xxxx: " + Long.toString(rDate[9] & 0xff, 2));
+
             int length = setialData.length;
             System.out.println("校验位置-----byte--"+ (length-2) + ": " + Integer.toHexString(setialData[length-2] & 0xFF));
             System.out.println("校验位置-----byte--"+ (length-1) + ": " + Integer.toHexString(setialData[length-1] & 0xFF));
@@ -154,11 +156,22 @@ public class ByteToHexUtils {
 
     }
 
-
+    // 截取指定位置的byte
     public byte[] subBytes(byte[] src, int begin, int count) {
         byte[] bs = new byte[count];
         System.arraycopy(src, begin, bs, 0, count);
         return bs;
+    }
+
+    /**
+     * byte数组转换为二进制字符串,每个字节以","隔开
+     **/
+    public static String conver2HexStr(byte[] b) {
+        StringBuffer result = new StringBuffer();
+        for (int i = 0; i < b.length; i++) {
+            result.append(Long.toString(b[i] & 0xff, 2) + ",");
+        }
+        return result.toString().substring(0, result.length() - 1);
     }
 
     

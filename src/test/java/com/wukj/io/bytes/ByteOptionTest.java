@@ -13,7 +13,6 @@ public class ByteOptionTest {
         new ByteOption().readByteFile();
     }
 
-
     @Test
     public void testReadBufferWriteToByteFile() throws IOException {
         new ByteOption().readBufferByteFile();
